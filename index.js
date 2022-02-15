@@ -5,5 +5,22 @@ const sum = (a, b) => {
   return a + b;
 };
 
-console.log("The sum is :", sum(null, 6));
-module.exports = sum;
+const square = (a) => {
+  if (!a) {
+    return "Invalid Input";
+  }
+  return a * a;
+};
+
+const cube = (a) => {
+  if (!a) {
+    return "Invalid Input";
+  }
+  return a ** 3;
+};
+
+const exponent = (num, power = 1) => {
+  return num ** power;
+};
+
+module.exports = { sum, square, cube };
